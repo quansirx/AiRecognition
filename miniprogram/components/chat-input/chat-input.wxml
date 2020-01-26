@@ -1,0 +1,18 @@
+<template name="chat-input">
+  <view class="input-flex-column {{inputObj.windowHeight > 722 ? 'input-flex-column-ipx' : ''}}">
+    <view class=" input-text-voice-super">
+      <block>
+        <image src="../../images/keyboard.png" class="extra-btn-style" />
+      </block>
+      <input class="chat-input-style" maxlength="450" confirm-type="send" value="{{textMessage}}"
+        bindconfirm="enterHandler" bindblur="chatInputBindBlurEvent" bindinput="chatInputGetValueEvent" />
+
+      <view hover-class="press-style-opacity" class="img-button">
+        <block>
+          <image src="../../images/msg-send.jpg" class="extra-btn-style msg-send-style" catchtap="confirmHandler" />
+        </block>
+
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="page-body">
+    <view class="index-hd">
+      <image class="index-banner" src="../../images/banner.png"></image>
+    </view>
+
+    <view class="product-list">
+      <block wx:for="{{botList}}" wx:key="BotId">
+        <navigator class="product-item"
+          url="../tbp-robot/tbp-robot?botType=1&BotId={{item.BotId}}&BotName={{item.BotCnName.length > 0 ? item.BotCnName:item.BotName}}&BotStatus={{item.Status}}&ChitchatType={{item.ChitchatType}}">
+          <view class="product-item__inner">
+            <view class="col">
+              <view class="icon">
+                <image src="../../images/product-translation.svg" />
+              </view>
+              <view class="text-media">
+                <view class="title">{{item.BotCnName.length > 0 ? item.BotCnName:item.BotName}}</view>
+                <view class="info">{{item.BotName}}</view>
+              </view>
+            </view>
+            <view class="col">
+              <view class="icon-right"></view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+
+  </view>
+</view>

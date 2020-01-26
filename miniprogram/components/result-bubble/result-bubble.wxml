@@ -1,0 +1,23 @@
+<view class="bubble-wrap">
+
+  <view class="create-time" wx:if="{{item.timeShow}}">{{item.create}}</view>
+  <view class="section-body" data-index="{{index}}">
+
+    <!-- 发消息 -->
+    <view class="send-message" wx:if="{{item.text}}">
+      <view class="text-content">
+        <view class="text-detail">{{item.text}}
+        </view>
+      </view>
+    </view>
+
+    <!-- 回消息 -->
+    <view class="answer-message" wx:if="{{item.answer}}">
+      <view class="text-content">
+        <view class="text-detail">{{item.answer}}
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

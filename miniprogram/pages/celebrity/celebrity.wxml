@@ -1,0 +1,16 @@
+<view class="image_viwe_size">
+<image src="{{image_src}}" style="width: 200px; height: 240px;"></image>
+</view>
+<view class='button_viwe_size'>
+  <button class="button_size" type="primary" bindtap="UploadImage">上传照片</button>
+</view>
+<view class='progress_view_size'>
+  <progress percent="{{progress}}" show-info />
+  <text class="text_size">上传进度</text>
+</view>
+<view class='text_viwe_size'>
+  <text class="text_size">姓名：{{Name}}</text>
+  <text class="text_size">标签：{{BasicInfo}}</text>
+  <text class="text_size">置信度：{{Confidence}}</text>
+
+</view>

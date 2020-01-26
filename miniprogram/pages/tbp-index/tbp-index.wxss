@@ -1,0 +1,23 @@
+/* pages/index/index.wxss */
+.index-hd { 
+    /* text-align: center; */
+    height: 380rpx;
+}
+
+.index-banner{
+    height: 380rpx;
+    width: 100%;
+}
+
+.navigator {
+	padding: 10rpx;
+	position: relative;
+	display: flex;
+    width: 30%;
+    height: 100rpx;
+    margin: -180rpx 70% ;
+    background-color: #ffffff;
+    opacity: 0;
+    z-index: 1;
+}
+

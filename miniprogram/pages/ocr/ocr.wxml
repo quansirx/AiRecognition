@@ -1,0 +1,26 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class='logo_view_size'>
+   <image src='{{image_src}}'></image>
+</view>
+<view class='text_view_size' style='padding-top: 30px;' style="display:{{text_description_status}};">
+  <text class='text_heading_size'>文字识别OCR</text>
+  <view>
+    <text class='text_info_size'>基于腾讯优图实验室世界领先的深度学习技术，将图片上的文字内容，智能识别成为可编辑的文本。</text>
+  </view>
+</view>
+
+<view class='text_view_size' style="display:{{text_ocr_status}};">
+  <view class='text_info_size' wx:for="{{json_data}}" wx:key="index">
+    <text class='text_lift_size'>文本 {{index + 1}}</text>
+    <text class='text_middle_size'>|</text>
+    <text class='text_right_size'>{{item}}</text>
+  </view>
+</view>
+
+<view class='button_viwe_size' style='padding-top: {{windowHeight}}px;'>
+  <button class="button_size" bindtap="uploadImage">{{button_text}}</button>
+</view>
+
+<view class='text_view_size' style='padding-top: {{windowHeight}}px;'>
+<text class='text_footer_size'>基于腾讯云AI视觉技术</text>
+</view>

@@ -1,0 +1,8 @@
+<button class="button" size="20px" type="primary" bindtap="face"> 人脸属性 </button>
+<button class="button" size="20px" type="primary" bindtap="ocr"> 通用印刷体识别 </button>
+<button class="button" size="20px" type="primary" bindtap="celebrity"> 公众人物识别 </button>
+<button class="button" size="20px" type="primary" bindtap="tbp"> 智能对话平台 </button>
+
+<view class='button_viwe_size' style='padding-top: {{windowHeight}}px;'>
+  <button class="button_size" bindtap="other">Powered By QJM.</button>
+</view>

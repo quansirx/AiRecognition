@@ -1,0 +1,23 @@
+<import src="../../components/chat-input/chat-input.wxml" />
+<view class="container">
+  <view class="setting-part">
+    <view class="setting-bot">当前机器人：{{curBot.BotName}}</view>
+  </view>
+  <scroll-view id="scroll-content" scroll-top="{{scroll_top}}" scroll-y="true" class="dialog-part"
+    scroll-into-view="dialog-{{toView}}" enable-back-to-top="true" scroll-with-animation="true">
+
+    <view wx:for="{{dialogList}}" wx:key="index" class="dialog-wrap" data-index="{{index}}">
+      <result-bubble item="{{item}}" index="{{index}}">
+      </result-bubble>
+    </view>
+
+    <view class="dialog-wrap" id="dialog-recording" wx:if="{{recording}}">
+      <result-bubble item="{{currentDialog}}">
+      </result-bubble>
+    </view>
+    <view id="dialog-fake"></view>
+
+  </scroll-view>
+  <template is="chat-input" data="{{inputObj,textMessage}}" />
+
+</view>

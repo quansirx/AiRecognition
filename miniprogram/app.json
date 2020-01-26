@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/face/face",
+    "pages/ocr/ocr",
+    "pages/celebrity/celebrity",
+    "pages/tbp-index/tbp-index",
+    "pages/tbp-robot/tbp-robot"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "AI识别&对话",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "cloud": true,
+  "sitemapLocation": "sitemap33.json"
+}
